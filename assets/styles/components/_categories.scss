@@ -1,0 +1,29 @@
+.categories {
+  &__icon {
+    margin-bottom: 1.5rem;
+  }
+  
+  &__heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  &__text {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $mint;
+    margin-bottom: 1rem;
+  }
+  
+  &__cta {
+    color: $mint;
+
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      font-size: .8rem;
+      content: "\f054";
+      font-weight: 900;
+      padding-left: .4rem;
+    }
+  }
+}

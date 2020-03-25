@@ -1,0 +1,95 @@
+.promotion-bar {
+  background-color: $primary;
+  color: #eee;
+  @include media-breakpoint-up(lg) { 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   }
+  font-size: .8rem;
+
+  &__item {
+    display: block;
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+    }
+    position: relative;
+  }
+
+  &__link {
+    padding: 10px;
+    display:block;
+    &:hover {
+      color: #eee;
+      text-decoration: none;
+    }
+
+    &::before, &::after {
+      font-family: "Font Awesome 5 Free";
+      color: $mint;
+      font-size: .8rem;
+    }
+
+    &--down-arrow::after {
+      content: "\f078";
+      font-weight: 900;
+      padding-left: .2rem;
+    }
+
+    &--profile::before {
+      content: "\f007";
+      font-weight: 500;
+      padding-right: .2rem;
+    }
+
+    &--speech-bubble:before {
+      content: "\f075";
+      font-weight: 500;
+      padding-right: .2rem;
+    }
+ 
+    &--info:before {
+      content: "\f129";
+      padding-right: .2rem;
+      font-weight: bold;
+    }
+
+    &--percent:before {
+      content: "\f295";
+      padding-right: .3rem;
+      font-weight: bold;
+    }
+
+    &--truck:before {
+      content: "\f0d1";
+      padding-right: .2rem;
+      font-weight: bold;
+    }
+
+    &--shopping-bag:before {
+      content: "\f290";
+      padding-right: .2rem;
+      font-weight: bold;
+    }
+
+    &--mint {
+      background-color: #52e1c0;
+      color: #333;
+      &:hover {
+        color: #333;
+      }
+      &::after {
+        color: #333;
+      }
+    }
+
+    &--dark-purple {
+      background-color: $dark-purple;
+      color: #eee;
+    }
+
+  }
+}
+
+
+

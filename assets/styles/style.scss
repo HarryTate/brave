@@ -1,0 +1,41 @@
+// Abstracts
+@import "./abstracts/variables";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+
+//Vendors
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+// Base
+@import "./base/base";
+@import "./base/reset";
+
+
+// // Layout
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/promotion-bar";
+@import "./layout/navigation";
+
+// Components
+@import "./components/hero";
+@import "./components/carousel";
+@import "./components/search-card";
+@import "./components/logo-carousel";
+@import "./components/promo";
+@import "./components/categories";
+@import "./components/testimonial";
+@import "./components/sign-up";
+@import "./components/split-card";
+
+
+
+
+@import "./base/helper";
+
+
+
+
+

@@ -1,0 +1,33 @@
+.carousel {
+  min-height: 300px;
+  padding: 60px 0;
+  @include media-breakpoint-up(md){
+    padding: 0;
+  }
+
+  &__body {
+    padding: 40px 20px;
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+  }
+
+  &__cta {
+    color: $primary;
+
+    &:after {
+        font-family: "Font Awesome 5 Free";
+        color: $primary;
+        font-size: .8rem;
+        content: "\f054";
+        font-weight: 900;
+        padding-left: .4rem;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.bg--dark-purple {
+  background-color: $dark-purple;
+  color: #eee;
+}
+
+.bg--primary {
+  background-color: $primary;
+  color: #eee;
+}
+
+.text--dark-purple {
+  color: $dark-purple;
+}
+.border-top {
+  border-top: 1px solid;
+  &--dark-purple {
+    border-color: $dark-purple;
+  }
+}
+
+.prev {
+  position: absolute;
+  font-size: 1.4rem;
+  top: 135px;
+  left: 30px;
+  color: #eee;
+}
+
+.next {
+  position: absolute;
+  font-size: 1.4rem;;
+  right: 30px;
+  top: 135px;
+  color: #eee;
+}
+
+// Slider asjustments
+.slick-next:before {
+  color: #333;
+  content: ">";
+}
+
+.slick-prev:before {
+  color: #333;
+  content: "<";
+}
+
+.slick-slide div div img {
+  margin: 0 auto;
+}
+
+.icon-layout {
+  padding: 260px 0 120px;
+}
+
+.slick-dots {
+  li {
+    background-color: grey;
+    border-radius: 77%;
+    width: 10px;
+    height: 10px;
+  }
+  .slick-active {
+    background-color: $primary;
+  }
+}
+
+.translate-up-40 {
+  transform: translateY(-40px);
+}

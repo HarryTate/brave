@@ -1,0 +1,70 @@
+.footer {
+  background-color: $dark-purple;
+  color: #eee;
+  padding: 60px 0;
+
+  &__heading {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: $primary;
+    font-weight: bold;
+  }
+
+  &__phone-number {
+    display: block;
+    font-size: 1.5rem;
+
+    &:hover, &:active, &:focus {
+      color: #eee;
+    }
+  }
+
+  &__list-item {
+    margin-bottom: .75rem;
+    font-size: .9rem;
+    color: #ccc;
+  }
+
+  &__back-to-top {
+    width: 75px;
+    height: 75px;
+    background-color: $primary;
+    transform: rotate(45deg);
+    position: relative;
+    display: block;
+    &:hover span {
+      color: #eee;
+    }
+
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      color: #eee;
+      font-size: 1.6rem;
+      position: absolute;
+      content: "\F078";
+      font-weight: 900;
+      top: -3px;
+      left: 4px;
+      transform: rotate(135deg);
+      display: inline-block;
+    }
+  }
+
+  &__back-to-top-text {
+    transform: rotate(315deg);
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 33px;
+    font-weight: bold;
+    &:hover {
+      color: #eee;
+    }
+  }
+}
+
+.footer-extra {
+  background-color: $primary;
+  padding: 10px 0;
+  color: #eee;
+}

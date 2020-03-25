@@ -1,0 +1,25 @@
+.testimonial {
+  padding: 0 50px;
+  text-align: center;
+
+  &__heading {
+    color: $primary;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  &__heading-rule {
+    width: 80px;
+    height: 3px;
+    background-color: $primary;
+    margin-bottom: .5rem;
+  }
+
+      &__rule {
+        width: 50px;
+        background-color: $primary;
+      }
+}
+

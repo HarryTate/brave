@@ -1,0 +1,11 @@
+.header {
+  padding: 40px 10px;
+}
+
+.header-content {
+  margin: 0 15px;
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

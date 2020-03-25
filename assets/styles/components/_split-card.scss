@@ -1,0 +1,53 @@
+.split-card {
+  
+  transform: translateY(-130px);
+  
+  &__img {
+    background-image: url("https://source.unsplash.com/1000x1200/?buildings");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 200px;
+    
+    @include media-breakpoint-up(md) {
+      min-height: 660px;
+    }
+  }
+  
+  &__content {
+    padding: 60px 40px;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  &__text {
+    font-size: 1rem;
+    padding: 10px;
+    color: $dark-purple;
+  }
+  
+  &__icon {
+    
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      padding-right: 1.2rem;
+      color: $primary;
+      font-size: 1.7rem;
+    }
+
+    &--padlock:before {
+      content: "\f023";
+      font-weight: bold;
+    }
+
+    &--truck:before {
+      content: "\f4df";
+      font-weight: bold;
+    }
+
+    &--percent:before {
+      content: "\f295";
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+
+.logo-carousel {
+    margin-bottom: 60px;
+
+  &__heading {
+    @include h2;
+    color: $primary;
+    position:relative;
+    display: inline-block;
+
+    &--large {
+      font-size: 2rem;
+    }
+
+    &--short-underline {
+      border-bottom: 4px solid #321f41;
+      position: absolute;
+      left: 25%;
+      width: 75px;
+      bottom: -23px;
+    }
+  }
+}
+
+
+

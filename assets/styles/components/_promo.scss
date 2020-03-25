@@ -1,0 +1,34 @@
+.promo {
+  margin-bottom: -200px;
+  z-index: 1;
+
+  &__content {
+    padding: 60px 0;
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: $dark-purple;
+  }
+
+  &__pre-text {
+    background-color: $dark-purple;
+    color: #eee;
+    margin-top: 2rem;
+    padding: 10px;
+    margin-bottom: .75rem;
+    display: inline-block;
+  }
+
+  &__hero-img {
+    z-index: 1;
+    background-image: url("https://source.unsplash.com/1600x800/weekly?universal");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+  }
+
+}

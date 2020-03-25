@@ -1,0 +1,50 @@
+.search-card {
+  padding: 10px;
+  background-color: #fff;
+  color: $slate;
+  padding: 50px 40px;
+  width: 400px;
+  box-shadow: 1px 1px 3px #ccc;
+  height: 360px;
+  
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    top: -45px;
+  } 
+ 
+  &__heading {
+    font-size: 1.6rem;
+    color: $primary;
+    margin-bottom: .4rem;;
+  }
+
+  &__search {
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: .3rem;
+  }
+
+  &__info {
+    margin-bottom: 2rem;
+    color: #ccc;
+    display: block;
+    
+    &::after {
+      font-family: "Font Awesome 5 Free";
+        color: $primary;
+        font-size: .8rem;
+        content: "\f054";
+        font-weight: 900;
+        padding-left: .4rem;
+    }
+  }
+
+  &__btn {
+    padding: 20px;
+    width: 100%;
+    background-color: $primary;
+    display: block;
+    color: #eee;
+    text-align: center;
+  }
+}

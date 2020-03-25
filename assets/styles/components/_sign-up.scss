@@ -1,0 +1,42 @@
+.sign-up {
+  text-align: center;
+
+  &__heading {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    background-color: transparent;
+    height: 40px;
+    width: 100%; 
+    margin: auto;
+    padding: 30px;
+   @include media-breakpoint-up(sm) {
+      flex: 0 1 70%;
+      width: 70%;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__cta {
+    background-color: $primary;
+    width: 100%;
+    margin: auto;
+    min-height: 40px;
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      flex: 0 1 20%;
+      width: 20%;
+      margin: 0;
+  }
+}
+}
